@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Action Gaming Shop HTML5 Template</title>
+    <title>Action Gaming</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -49,19 +49,22 @@
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="" style="width: 158px;">
+                        <img src="assets/images/logo.svg" alt="" style="width: 158px; margin-top: -45px;">
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                      <li><a href="index.html" class="active">Home</a></li>
-                      <li><a href="shop.html">Our Shop</a></li>
-                      <li><a href="product-details.html">Product Details</a></li>
-                      <li><a href="contact.html">Contact Us</a></li>
-                      <li><a href="#">Sign In</a></li>
+                      <li><a data-i18n="home" href="index.html" class="active">Home</a></li>
+                      <li><a data-i18n="shop" href="shop.html">Our Shop</a></li>
+                      <li><a data-i18n="contact" href="contact.html">Contact Us</a></li>
+                      <li><a data-i18n="signin" href="#">Sign In</a></li>
+                      <!-- <li><select id="lang">
+                        <option  data-i18n="english" value="en" >English</option>
+                        <option  data-i18n="arabic" value="ar" selected>Arabic</option>
+                      </select></li> -->
                   </ul>   
                     <a class='menu-trigger'>
-                        <span>Menu</span>
+                        <span data-i18n="menu">Menu</span>
                     </a>
                     <!-- ***** Menu End ***** -->
                 </nav>
@@ -76,13 +79,13 @@
       <div class="row">
         <div class="col-lg-6 align-self-center">
           <div class="caption header-text">
-            <h6>Welcome to lugx</h6>
-            <h2>BEST GAMING SITE EVER!</h2>
-            <p>Action Gaming is free Bootstrap 5 HTML CSS website template for your gaming websites. You can download and use this layout for commercial purposes. Please tell your friends about Ali alajez.</p>
+            <h6 data-i18n="welcome">Welcome to Action</h6>
+            <h2 data-i18n="brst">BEST GAMING SITE EVER!</h2>
+            <p data-i18n="pDetails">In our store, we are committed to providing a unique and enjoyable shopping experience for gaming enthusiasts. Our extensive collection includes popular and diverse electronic games across various platforms, and we always offer the latest releases.</p>
             <div class="search-input">
               <form id="search" action="#">
                 <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
-                <button role="button">Search Now</button>
+                <button data-i18n="search" role="button">Search Now</button>
               </form>
             </div>
           </div>
@@ -107,7 +110,7 @@
               <div class="image">
                 <img src="assets/images/featured-01.png" alt="" style="max-width: 44px;">
               </div>
-              <h4>Free Storage</h4>
+              <h4 data-i18n="free">Free Storage</h4>
             </div>
           </a>
         </div>
@@ -117,7 +120,7 @@
               <div class="image">
                 <img src="assets/images/featured-02.png" alt="" style="max-width: 44px;">
               </div>
-              <h4>User More</h4>
+              <h4 data-i18n="user">User More</h4>
             </div>
           </a>
         </div>
@@ -127,7 +130,7 @@
               <div class="image">
                 <img src="assets/images/featured-03.png" alt="" style="max-width: 44px;">
               </div>
-              <h4>Reply Ready</h4>
+              <h4 data-i18n="reply">Reply Ready</h4>
             </div>
           </a>
         </div>
@@ -137,7 +140,7 @@
               <div class="image">
                 <img src="assets/images/featured-04.png" alt="" style="max-width: 44px;">
               </div>
-              <h4>Easy Layout</h4>
+              <h4 data-i18n="easy">Easy Layout</h4>
             </div>
           </a>
         </div>
@@ -150,13 +153,13 @@
       <div class="row">
         <div class="col-lg-6">
           <div class="section-heading">
-            <h6>Trending</h6>
-            <h2>Trending Games</h2>
+            <h6 data-i18n="trending">Trending</h6>
+            <h2 data-i18n="trendingGames">Trending Games</h2>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="main-button">
-            <a href="shop.html">View All</a>
+            <a data-i18n="view" href="shop.html">View All</a>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
@@ -166,8 +169,8 @@
               <span class="price"><em>$28</em>$20</span>
             </div>
             <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
+              <span data-i18n="action" class="category">Action</span>
+              <h4 data-i18n="assasin">Assasin Creed</h4>
               <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
@@ -179,8 +182,8 @@
               <span class="price">$44</span>
             </div>
             <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
+              <span data-i18n="action" class="category">Action</span>
+              <h4 data-i18n="assasin">Assasin Creed</h4>
               <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
@@ -192,8 +195,8 @@
               <span class="price"><em>$64</em>$44</span>
             </div>
             <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
+              <span data-i18n="action" class="category">Action</span>
+              <h4 data-i18n="assasin">Assasin Creed</h4>
               <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
@@ -205,8 +208,8 @@
               <span class="price">$32</span>
             </div>
             <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
+              <span data-i18n="action" class="category">Action</span>
+              <h4 data-i18n="assasin">Assasin Creed</h4>
               <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
@@ -220,13 +223,13 @@
       <div class="row">
         <div class="col-lg-6">
           <div class="section-heading">
-            <h6>TOP GAMES</h6>
-            <h2>Most Played</h2>
+            <h6 data-i18n="topGames">TOP GAMES</h6>
+            <h2 data-i18n="mostPlayed">Most Played</h2>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="main-button">
-            <a href="shop.html">View All</a>
+            <a data-i18n="view" href="shop.html">View All</a>
           </div>
         </div>
         <div class="col-lg-2 col-md-6 col-sm-6">
@@ -235,9 +238,9 @@
               <a href="product-details.html"><img src="assets/images/top-game-01.jpg" alt=""></a>
             </div>
             <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.html">Explore</a>
+                <span data-i18n="adventure" class="category">Adventure</span>
+                <h4 data-i18n="assasin">Assasin Creed</h4>
+                <a data-i18n="explore" href="product-details.html">Explore</a>
             </div>
           </div>
         </div>
@@ -247,9 +250,9 @@
               <a href="product-details.html"><img src="assets/images/top-game-02.jpg" alt=""></a>
             </div>
             <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.html">Explore</a>
+                <span data-i18n="adventure" class="category">Adventure</span>
+                <h4 data-i18n="assasin">Assasin Creed</h4>
+                <a data-i18n="explore" href="product-details.html">Explore</a>
             </div>
           </div>
         </div>
@@ -259,9 +262,9 @@
               <a href="product-details.html"><img src="assets/images/top-game-03.jpg" alt=""></a>
             </div>
             <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.html">Explore</a>
+                <span data-i18n="adventure" class="category">Adventure</span>
+                <h4 data-i18n="assasin">Assasin Creed</h4>
+                <a data-i18n="explore" href="product-details.html">Explore</a>
             </div>
           </div>
         </div>
@@ -271,9 +274,9 @@
               <a href="product-details.html"><img src="assets/images/top-game-04.jpg" alt=""></a>
             </div>
             <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.html">Explore</a>
+                <span data-i18n="adventure"  class="category">Adventure</span>
+                <h4 data-i18n="assasin">Assasin Creed</h4>
+                <a data-i18n="explore" href="product-details.html">Explore</a>
             </div>
           </div>
         </div>
@@ -283,9 +286,9 @@
               <a href="product-details.html"><img src="assets/images/top-game-05.jpg" alt=""></a>
             </div>
             <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.html">Explore</a>
+                <span data-i18n="adventure"  class="category">Adventure</span>
+                <h4 data-i18n="assasin">Assasin Creed</h4>
+                <a data-i18n="explore" href="product-details.html">Explore</a>
             </div>
           </div>
         </div>
@@ -295,9 +298,9 @@
               <a href="product-details.html"><img src="assets/images/top-game-06.jpg" alt=""></a>
             </div>
             <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.html">Explore</a>
+                <span data-i18n="adventure"  class="category">Adventure</span>
+                <h4 data-i18n="assasin">Assasin Creed</h4>
+                <a data-i18n="explore" href="product-details.html">Explore</a>
             </div>
           </div>
         </div>
@@ -310,13 +313,13 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <div class="section-heading">
-            <h6>Categories</h6>
-            <h2>Top Categories</h2>
+            <h6 data-i18n="categories">Categories</h6>
+            <h2 data-i18n="topCategories">Top Categories</h2>
           </div>
         </div>
         <div class="col-lg col-sm-6 col-xs-12">
           <div class="item">
-            <h4>Action</h4>
+            <h4 data-i18n="action">Action</h4>
             <div class="thumb">
               <a href="product-details.html"><img src="assets/images/categories-01.jpg" alt=""></a>
             </div>
@@ -324,7 +327,7 @@
         </div>
         <div class="col-lg col-sm-6 col-xs-12">
           <div class="item">
-            <h4>Action</h4>
+            <h4 data-i18n="action">Action</h4>
             <div class="thumb">
               <a href="product-details.html"><img src="assets/images/categories-05.jpg" alt=""></a>
             </div>
@@ -332,7 +335,7 @@
         </div>
         <div class="col-lg col-sm-6 col-xs-12">
           <div class="item">
-            <h4>Action</h4>
+            <h4 data-i18n="action">Action</h4>
             <div class="thumb">
               <a href="product-details.html"><img src="assets/images/categories-03.jpg" alt=""></a>
             </div>
@@ -340,7 +343,7 @@
         </div>
         <div class="col-lg col-sm-6 col-xs-12">
           <div class="item">
-            <h4>Action</h4>
+            <h4 data-i18n="action">Action</h4>
             <div class="thumb">
               <a href="product-details.html"><img src="assets/images/categories-04.jpg" alt=""></a>
             </div>
@@ -348,7 +351,7 @@
         </div>
         <div class="col-lg col-sm-6 col-xs-12">
           <div class="item">
-            <h4>Action</h4>
+            <h4 data-i18n="action">Action</h4>
             <div class="thumb">
               <a href="product-details.html"><img src="assets/images/categories-05.jpg" alt=""></a>
             </div>
@@ -366,12 +369,12 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="section-heading">
-                  <h6>Our Shop</h6>
-                  <h2>Go Pre-Order Buy & Get Best <em>Prices</em> For You!</h2>
+                  <h6 data-i18n="shop">Our Shop</h6>
+                  <h2 data-i18n="goPre">Go Pre-Order Buy & Get Best <em>Prices</em> For You!</h2>
                 </div>
-                <p>Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor incididunt.</p>
+                <p data-i18n="lorem">We strive to ensure that our customers are satisfied and offer support and assistance in case of inquiries or issues.</p>
                 <div class="main-button">
-                  <a href="shop.html">Shop Now</a>
+                  <a data-i18n="shopNow" href="shop.html">Shop Now</a>
                 </div>
               </div>
             </div>
@@ -382,13 +385,13 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="section-heading">
-                  <h6>NEWSLETTER</h6>
-                  <h2>Get Up To $100 Off Just Buy <em>Subscribe</em> Newsletter!</h2>
+                  <h6 data-i18n="newSletter">NEWSLETTER</h6>
+                  <h2 data-i18n="getUp">Get Up To $100 Off Just Buy <em>Subscribe</em> Newsletter!</h2>
                 </div>
                 <div class="search-input">
                   <form id="subscribe" action="#">
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email...">
-                    <button type="submit">Subscribe Now</button>
+                    <button data-i18n="subscribe" type="submit">Subscribe Now</button>
                   </form>
                 </div>
               </div>
@@ -402,7 +405,7 @@
   <footer>
     <div class="container">
       <div class="col-lg-12">
-        <p>Copyright © 2022 Action Gaming Company. All rights reserved.by Ali alajez &nbsp;&nbsp;</p>
+        <p data-i18n="footer">Copyright © 2022 Action Gaming Company. All rights reserved &nbsp;&nbsp;</p>
       </div>
     </div>
   </footer>
@@ -415,6 +418,6 @@
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
-
+  <script src="assets/js/language.js"></script>
   </body>
 </html>
